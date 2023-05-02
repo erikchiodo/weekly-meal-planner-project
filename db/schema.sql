@@ -1,4 +1,8 @@
 DROP DATABASE IF EXISTS user_db;
 CREATE DATABASE user_db;
 
--- TODO: Add other databases if needed
+DROP DATABASE IF EXISTS favorites_db;
+CREATE DATABASE favorites_db;
+
+DROP DATABASE IF EXISTS week_db;
+CREATE DATABASE week_db;
