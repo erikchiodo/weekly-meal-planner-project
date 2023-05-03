@@ -1,5 +1,5 @@
-const User = require("./User");
+const User = require("./User.js");
+const Favorites = require("./Favorites.js");
+const Schedule = require("./Schedule.js")
 
-module.exports = { User };
-
-// TODO: Add other databases (if needed)
+module.exports = { User, Favorites, Schedule };
