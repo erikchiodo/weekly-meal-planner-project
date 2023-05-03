@@ -5,4 +5,4 @@ DROP DATABASE IF EXISTS favorites_db;
 CREATE DATABASE favorites_db;
 
 DROP DATABASE IF EXISTS week_db;
-CREATE DATABASE week_db;
+CREATE DATABASE schedule_db;
