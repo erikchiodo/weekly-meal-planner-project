@@ -1,14 +1,26 @@
 [
   {
-    "favorite_dish": "Pasta"
+    "favorite_dish": "Pasta",
+    "user_id": 1
   },
   {
-    "favorite_dish": "Pizza"
+    "favorite_dish": "Pizza",
+    "user_id": 1
   },
   {
-    "favorite_dish": "Sushi"
+    "favorite_dish": "Sushi",
+    "user_id": 2
   },
   {
-    "favorite_dish": "Tacos"
+    "favorite_dish": "Tacos",
+    "user_id": 2
+  },
+  {
+    "favorite_dish": "Enchiladas",
+    "user_id": 3
+  },
+  {
+    "favorite_dish": "Chili",
+    "user_id": 3
   }
 ]

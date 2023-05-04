@@ -5,7 +5,7 @@ class Favorites extends Model {}
 
 Favorites.init(
   {
-    user_id: {
+    id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
@@ -14,6 +14,13 @@ Favorites.init(
     favorite_dish: {
       type: DataTypes.STRING,
       allowNull: true,
+    },
+    user_id: {
+      type:DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
     },
   },
   {
