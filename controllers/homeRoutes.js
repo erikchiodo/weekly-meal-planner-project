@@ -4,7 +4,9 @@
 const router = require('express').Router();
 
 router.get('/', async (req, res) => {
-  res.render('homepage');
+  res.render('login');
 });
-
+router.get('/register', async (req, res) => {
+  res.render('registration');
+});
 module.exports = router;
