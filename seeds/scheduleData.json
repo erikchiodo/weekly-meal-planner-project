@@ -2,16 +2,19 @@
   {
     "meal": "Breakfast",
     "day": "Mon",
-    "dish": "Bagel"
+    "dish": "Bagel",
+    "user_id": 1
   },
   {
     "meal": "Dinner",
     "day": "Sat",
-    "dish": "Doner Kebab"
+    "dish": "Doner Kebab",
+    "user_id": 2
   },
   {
     "meal": "Lunch",
     "day": "Thurs",
-    "dish": "Ramen"
+    "dish": "Ramen",
+    "user_id": 3
   }
 ]

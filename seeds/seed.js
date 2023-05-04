@@ -5,9 +5,6 @@ const userData = require("./userData.json");
 const favoritesData = require("./favoritesData.json");
 const schedulesData = require("./scheduleData.json");
 
-
-// TODO: Add Favorites (Many to One) & Schedule (Many to One) to bulk creation (Erik to complete)
-
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
