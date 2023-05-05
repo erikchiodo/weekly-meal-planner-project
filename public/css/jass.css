@@ -1108,6 +1108,11 @@ a:hover {
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
 
+.orClass{
+  font-size: 30px;
+  justify-content: center;
+}
+
 form {
   width: 100%;
 }
