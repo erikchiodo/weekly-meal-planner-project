@@ -26,10 +26,17 @@ router.post("/login", async (req, res) => {
       req.session.logged_in = true;
 
       res.json({ user: userData, message: "You are now logged in!" });
+
+    res.redirect("/weekly");
+
     });
   } catch (err) {
     res.status(400).json(err);
   }
+});
+
+router.get("/weekly", async (req, res) => {
+  res.render("weekly");
 });
 
 router.post("/logout", (req, res) => {
@@ -41,5 +48,6 @@ router.post("/logout", (req, res) => {
     res.status(404).end();
   }
 });
+
 
 module.exports = router;
