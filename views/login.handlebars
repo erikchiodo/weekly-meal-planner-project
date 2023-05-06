@@ -11,7 +11,7 @@
 
         <!-- Add classes to apply a white background, rounded corners, padding, and margin on the y-axis (top and bottom) -->
         <form class="bg-white my-4 p-4 rounded login-form">
-          <h3>Hey whats Mealy-o! Login and start meal prepping!</h3>
+          <h3>Hey whats the Mealy-o! Login and start meal prepping!</h3>
           <div class="form-group py-2">
             <label for="username">Username</label>
             <input type="text" id="email-login" class="form-control" placeholder="Username" required />
@@ -25,21 +25,16 @@
 
 
 
-          <!-- <div class="form-group py-2">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="yes" id="mailing-list">
-              <label class="form-check-label" for="mailing-list">
-                Sign up for the mailing list?
-              </label>
-            </div>
-          </div> -->
 
           <button class="btn btn-block btn-primary w-100" type="submit">Login!</button>
+{{!-- form-group py-2  --}}
 
-          <div>
-            <p>___________ or ___________ </p>
-            <button><a href="/register">REGISTER HERE!</a></button>
-          </div>
+          <div class="row" >
+            <p class="col-4 " style="border-bottom: solid black 2px;"></p>
+            <p class=" col-1 orClass">or</p> 
+            <p class="col-4 " style="border-bottom: solid black 2px;"></p>
+          </div> 
+          <button class="btn btn-block btn-primary w-100"><a href="/register">New user? REGISTER HERE!</a></button>
         </form>
       </div>
     </section>
