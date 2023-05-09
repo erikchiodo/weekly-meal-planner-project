@@ -50,4 +50,69 @@ router.post("/logout", (req, res) => {
 });
 
 
+// User Routes
+router
+  .route("/")
+  .post(async (req, res) => {
+    try {
+      const newUser = await User.create(req.body);
+      res.status(201).json(newUser);
+    } catch (error) {
+      res.status(400).json({ error: error.message });
+    }
+  })
+  .get(async (req, res) => {
+    try {
+      const getUser = await User.findAll();
+      res.json(getUser);
+    } catch (error) {
+      res.status(400).json({ error: error.message });
+    }
+  });
+
+router
+  .route("/:id")
+  .get(async (req, res) => {
+    try {
+      const { id } = req.params;
+      const getUser = await User.findByPk(id);
+      if (getUser) {
+        res.json(getUser);
+      } else {
+        res.status(404).json({ error: "Record not found" });
+      }
+    } catch (error) {
+      res.status(400).json({ error: error.message });
+    }
+  })
+  .put(async (req, res) => {
+    try {
+      const { id } = req.params;
+      const [updateUser] = await User.update(req.body, {
+        where: { id },
+      });
+      if (updateUser === 1) {
+        res.json({ message: "Record updated successfully" });
+      } else {
+        res.status(404).json({ error: "Record not found" });
+      }
+    } catch (error) {
+      res.status(400).json({ error: error.message });
+    }
+  })
+  .delete(async (req, res) => {
+    try {
+      const { id } = req.params;
+      const deleteUser = await User.destroy({ where: { id } });
+      if (deleteUser === 1) {
+        res.json({ message: "Record deleted successfully" });
+      } else {
+        res.status(404).json({ error: "Record not found" });
+      }
+    } catch (error) {
+      res.status(400).json({ error: error.message });
+    }
+  });
+
+
 module.exports = router;
