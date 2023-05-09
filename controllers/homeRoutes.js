@@ -9,7 +9,7 @@ router.get("/register", async (req, res) => {
 // Post request to register user
 router.post("/register", async (req, res) => {
     const { first_name, last_name, email, password } = req.body;
-
+    
     // Validate inputs
     if (!first_name || !last_name || !email || !password) {
       res.status(400).send("All fields are required");
