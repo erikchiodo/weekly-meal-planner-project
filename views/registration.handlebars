@@ -10,34 +10,36 @@
         <h1 class="display-3 text-center text-black">Become 1 in a Mealy! Sign-up today!</h1>
 
         <!-- Add classes to apply a white background, rounded corners, padding, and margin on the y-axis (top and bottom) -->
-        <form class="bg-white my-4 p-4 rounded">
+        <form id = "form-submit"class="bg-white my-4 p-4 rounded">
           <h3>You're 1 in a Mealy, so get your meals prepped the right way ;)</h3>
           <div class="form-group py-2">
             <label for="fistname">First Name</label>
-            <input type="text" id="fistname" class="form-control" placeholder="First Name" required />
+            <input type="text" id="fistname" class="form-control" placeholder="First Name" />
           </div>
           <div class="form-group py-2">
             <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" class="form-control" placeholder="Last Name" required />
+            <input type="text" id="lastname" class="form-control" placeholder="Last Name"  />
           </div>
           <div class="form-group py-2">
             <label for="email">Email</label>
-            <input type="text" id="email-signup" class="form-control" placeholder="Enter Your Email" required />
+            <input type="text" id="email-signup" class="form-control" placeholder="Enter Your Email" />
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
 
           <div class="form-group py-2">
             <label for="password">Password</label>
-            <input type="text" id="password" class="form-control" placeholder="Password" required />
+            <input type="text" id="password" class="form-control" placeholder="Password" />
           </div>
 
           <div class="form-group py-2">
             <label for="password">Re-type Password</label>
-            <input type="text" id="re-password" class="form-control" placeholder="Re-type Password" required />
+            <input type="text" id="re-password" class="form-control" placeholder="Re-type Password" />
           </div>
-          <button class="btn btn-block btn-primary w-100">Signup!</button>
+          <button id = "register" type="submit" class="btn btn-block btn-primary w-100">Signup!</button>
         </form>
       </div>
     </section>
 
   </div>
+
+  <script src="/js/register.js"></script>
