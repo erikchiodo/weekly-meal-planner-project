@@ -5,12 +5,6 @@
 
  async function registerUserHandler(event) {
     event.preventDefault();
-
-    console.log(firstNameInput.value);
-    console.log(lastNameInput.value);
-    console.log(emailInput.value);
-    console.log(passwordInput.value);
-
     const userData = { 
     first_name: firstNameInput.value,
     last_name: lastNameInput.value,
