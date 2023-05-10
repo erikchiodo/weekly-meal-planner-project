@@ -1,5 +1,15 @@
-const User = require("./User");
+const User = require("./User.js");
+const Favorites = require("./Favorites.js");
+const Schedule = require("./Schedule.js")
 
-module.exports = { User };
+User.hasMany(Favorites, {
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE',
+});
 
-// TODO: Add other databases (if needed)
+User.hasMany(Schedule, {
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE',
+})
+
+module.exports = { User, Favorites, Schedule };
